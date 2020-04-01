@@ -7,26 +7,18 @@ import { User } from '../../models/User';
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css']
 })
-
 export class UserComponent implements OnInit {
   // Properties
   user: User;
 
   // Methods
-  constructor() {
-    
-  } 
+  constructor() {}
 
   ngOnInit() {
     this.user = {
       firstName: 'John',
       lastName: 'Doe',
-      age: 30,
-      address: {
-        street: '50 Main st',
-        city: 'Boston',
-        state: 'MA'
-      }
-    }
+      email: 'john@gmail.com'
+    };
   }
 }
